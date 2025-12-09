@@ -1,0 +1,61 @@
+[0.012s] Invoking command in '/home/arjan/ros2_ws/src/tutorial_interfaces/build/tutorial_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/arjan/ros2_ws/src/tutorial_interfaces -DCMAKE_INSTALL_PREFIX=/home/arjan/ros2_ws/src/tutorial_interfaces/install/tutorial_interfaces
+[0.101s] -- The C compiler identification is GNU 13.3.0
+[0.192s] -- The CXX compiler identification is GNU 13.3.0
+[0.223s] -- Detecting C compiler ABI info
+[0.369s] -- Detecting C compiler ABI info - done
+[0.386s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.387s] -- Detecting C compile features
+[0.387s] -- Detecting C compile features - done
+[0.406s] -- Detecting CXX compiler ABI info
+[0.568s] -- Detecting CXX compiler ABI info - done
+[0.584s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.585s] -- Detecting CXX compile features
+[0.586s] -- Detecting CXX compile features - done
+[0.591s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.802s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.949s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[0.992s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.006s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.027s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.048s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.103s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.119s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.516s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[1.517s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[1.517s]   tutorial_interfaces --arguments-file
+[1.517s]   /home/arjan/ros2_ws/src/tutorial_interfaces/build/tutorial_interfaces/rosidl_adapter__arguments__tutorial_interfaces.json
+[1.517s]   --output-dir
+[1.517s]   /home/arjan/ros2_ws/src/tutorial_interfaces/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces
+[1.517s]   --output-file
+[1.517s]   /home/arjan/ros2_ws/src/tutorial_interfaces/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces.idls)
+[1.517s]   returned error code 1:
+[1.517s] 
+[1.517s]   Traceback (most recent call last):
+[1.518s] 
+[1.518s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[1.518s]     File "<frozen runpy>", line 88, in _run_code
+[1.518s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[1.518s]       sys.exit(main())
+[1.518s]                ^^^^^^
+[1.518s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main
+[1.518s]       abs_idl_file = convert_to_idl(
+[1.518s]                      ^^^^^^^^^^^^^^^
+[1.518s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 24, in convert_to_idl
+[1.519s]       return convert_srv_to_idl(
+[1.519s]              ^^^^^^^^^^^^^^^^^^^
+[1.519s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/srv/__init__.py", line 28, in convert_srv_to_idl
+[1.519s]       srv = parse_service_string(package_name, input_file.stem, content)
+[1.519s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1.519s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 851, in parse_service_string
+[1.519s]       raise InvalidServiceSpecification(
+[1.519s] 
+[1.519s]   rosidl_adapter.parser.InvalidServiceSpecification: Could not find separator
+[1.519s]   '---' between request and response
+[1.519s] 
+[1.520s] Call Stack (most recent call first):
+[1.520s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[1.520s]   CMakeLists.txt:13 (rosidl_generate_interfaces)
+[1.520s] 
+[1.520s] [0m
+[1.520s] -- Configuring incomplete, errors occurred!
+[1.532s] Invoked command in '/home/arjan/ros2_ws/src/tutorial_interfaces/build/tutorial_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/arjan/ros2_ws/src/tutorial_interfaces -DCMAKE_INSTALL_PREFIX=/home/arjan/ros2_ws/src/tutorial_interfaces/install/tutorial_interfaces
