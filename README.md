@@ -61,7 +61,7 @@ ros2_basics/
 ├── py_pubsub/ # Python Publisher/Subscriber
 └── tutorial_interfaces/ # Custom Msg/Srv definitions
 
-## 📚 Resources & Documentation
+## Resources & Documentation
 
 For more information on the specific features and APIs used in this project, refer to the official documentation:
 
